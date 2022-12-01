@@ -1,0 +1,14 @@
+/* Палітра
+основний колір тексту - #212121;
+додатковий колір тексту - #757575;
+колір активності - #2196F3;
+білий колір - #FFFFFF;*/
+
+:root {
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --activ-color: #2196F3;
+    --white-color: #FFFFFF;
+    --time: 250ms;
+    --time-funktion: cubic-bezier(0.4, 0, 0.2, 1)
+}
