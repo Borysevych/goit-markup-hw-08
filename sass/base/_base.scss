@@ -10,10 +10,27 @@ body {
     list-style: none;
 }
 
+// Breakpoints
+
+$mobile: 480px;
+$tablet: 768px;
+$desctop: 1200px;
+
 .container {
-    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    // mobile
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        }
+    // tablet
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        }
+    // desctop
+    @media screen and (min-width: $desctop) {
+        width: $desctop;
+    }
 }
 
 h1,
