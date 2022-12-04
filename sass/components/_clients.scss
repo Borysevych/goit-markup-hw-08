@@ -1,21 +1,29 @@
 .clients__title {
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: $desctop) {
+        font-size: 36px;
+        }
 }
 
 .clients {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        }
 }
 
 .clients__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -25,6 +33,14 @@
             border: 1px solid var(--activ-color);
             cursor: pointer;
         }
+        
+        @media screen and (min-width: $tablet) {
+                    width: 226px;
+                }
+        @media screen and (min-width: $desctop) {
+                    width: 170px;
+                }
+
 }
 
 .clients__item a {
