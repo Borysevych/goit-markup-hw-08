@@ -36,12 +36,18 @@
         }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        width: $tablet/2 - 60px;
-            }
+        width: 354px;
+        }
 }
 
 &__text {
-    padding: 30px 0;
+
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $desctop) {
+            padding: 30px 0;
+        }
 }
 
 &__name {
