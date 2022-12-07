@@ -4,8 +4,23 @@
 }
 
 .footer .container {
+
+    display: block;
+
+    @media screen and (min-width: $desctop) {
+        display: flex;
+        align-items: baseline;
+        }
+}
+
+.footer-tablet {
+
+    display: block;
+
+@media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
+}
 }
 
 .adress-li:not(:last-child) {
@@ -63,8 +78,13 @@
 }
 
 .footer-form {
-    display: flex;
-    gap: 12px;
+    
+    display: block;
+
+    @media screen and (min-width: $desctop) {
+        display: flex;
+        gap: 12px;
+        }
 }
 
 .sign {
