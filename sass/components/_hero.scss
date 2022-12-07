@@ -2,15 +2,55 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: #C4C4C4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     background-image:
         linear-gradient(#2F303A66 40%,
-            #2F303A66 40%), url("../images/hero-foto.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
+                #2F303A66 40%), url("../../images/hero/m.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                    linear-gradient(#2F303A66 40%,
+                        #2F303A66 40%), url("../../images/hero/m@2x.jpg");
+        }
+
+// tablet
+    @media screen and (min-width: $tablet) {
+            background-image:
+                    linear-gradient(#2F303A66 40%,
+                        #2F303A66 40%), url("../../images/hero/t.jpg");
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                        linear-gradient(#2F303A66 40%,
+                            #2F303A66 40%), url("../../images/hero/t@2x.jpg");
+            }
+        }
+
+// desktop    
 
     @media screen and (min-width: $desctop) {
         padding-top: 200px;
         padding-bottom: 200px;
+
+        background-image:
+                linear-gradient(#2F303A66 40%,
+                    #2F303A66 40%), url("../../images/hero/d.jpg");
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                        linear-gradient(#2F303A66 40%,
+                            #2F303A66 40%), url("../../images/hero/d@2x.jpg");
+            }
+
         }
 
     &__title {
@@ -27,12 +67,11 @@
                     line-height: 1.36;
                 }
         }
-
 }
 
 .hero-button {
     display: flex;
-    width: 216px;
+    width: 200px;
     height: 50px;
     justify-content: center;
     margin-top: 30px;
