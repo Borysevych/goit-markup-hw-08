@@ -2,8 +2,13 @@
     color: var(--activ-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $desctop) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
 }
 
 .logo-end {
@@ -21,5 +26,11 @@
 
 .logo-f {
     display: block;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: $desctop) {
+        display: block;
+        text-align: start;
+        }
 }

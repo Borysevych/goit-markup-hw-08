@@ -1,6 +1,16 @@
 .footer {
+    width: $mobile;
     padding: 60px 0;
+    margin: 0 auto;
     background-color: #2F303A;
+
+    @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+
+    @media screen and (min-width: $desctop) {
+            width: auto;
+        }
 }
 
 .footer .container {
@@ -20,11 +30,33 @@
 @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+}}
+
+@media screen and (max-width: 767px) {
+
+.contacts-list {
+    margin-bottom: 60px;
 }
 }
 
 .adress-li:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
+}
+
+.adress-li {
+    text-align: center;
+
+    @media screen and (min-width: $desctop) {
+        text-align: start;
+        }
 }
 
 .adress-link {
@@ -40,13 +72,29 @@
 }
 
 .f-right {
-    width: 206px;
-    height: 80px;
-    margin-left: 70px;
+
+    text-align: center;
+
+    @media screen and (min-width: $desctop) {
+        text-align: start;
+        width: 206px;
+        height: 80px;
+        margin-left: 70px;
+        }
 }
 
 .f-right .socials-list {
-    margin: 0;
+
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+                margin-bottom: 60px;
+            }
+    
+    @media screen and (min-width: $desctop) {
+            text-align: start;
+            margin: 0;
+        }
 }
 
 .join {
@@ -61,20 +109,28 @@
 }
 
 .f-form {
-    width: 570px;
-    height: 86px;
-    margin-left: 93px;
+
+    @media screen and (min-width: $desctop) {
+        width: 570px;
+        height: 86px;
+        margin-left: 93px;
+        }
 }
 
 .f-sign {
     width: auto;
-    margin-bottom: 20px;
+    text-align: center;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (min-width: $desctop) {
+        text-align: start;
+        }
 }
 
 .footer-form {
@@ -84,6 +140,7 @@
     @media screen and (min-width: $desctop) {
         display: flex;
         gap: 12px;
+        align-items: center;
         }
 }
 
@@ -97,8 +154,9 @@
 }
 
 .footer-input {
-    width: 358px;
+    width: 450px;
     height: 50px;
+    margin: 20px auto;
     padding-left: 16px;
     color: var(--white-color);
     background-color: #2F303A;
@@ -122,6 +180,14 @@
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6)
         }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            display: flex;
+
+                }
+    @media screen and (min-width: $desctop) {
+        width: 358px;
+        }
 }
 
 .footer-btn {
@@ -130,6 +196,7 @@
     justify-content: center;
     width: 200px;
     height: 50px;
+    margin: 0 auto;
 
     background-color: var(--activ-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
