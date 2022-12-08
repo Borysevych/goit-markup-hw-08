@@ -38,6 +38,9 @@
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: 354px;
         }
+    @media screen and (min-width: $desctop) {
+            width: 270px;
+        }
 }
 
 &__text {
