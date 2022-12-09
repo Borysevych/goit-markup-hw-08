@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     // mobile
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: $mobile) {
         width: $mobile;
         }
     // tablet
@@ -40,21 +40,16 @@ ul {
 }
 
 .section {
-    width: $mobile;
-
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0 auto;
 
     @media screen and (min-width: $tablet) {
-            width: $tablet;
-    
             padding-top: 94px;
             padding-bottom: 94px;
         }
 
     @media screen and (min-width: $desctop) {
-        width: $desctop;
+        width: 100%;
         
         padding-top: 94px;
         padding-bottom: 94px;
